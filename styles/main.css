@@ -7,6 +7,22 @@
 	box-sizing: border-box;
 
 }
+html {
+	overflow-x: hidden;
+}
+
+body {
+	background: var(--grey);
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
 
 
 :root {
@@ -74,10 +90,10 @@
 }
 
 #navbar{
-    background-color: var(--light-green);
-
-    
+    background-color: var(--colorWhite10);
 }
+
+
 
 #navbar .nav-icon{
 	width: 48px;
@@ -86,6 +102,8 @@
 	align-items: center;
 	margin: 6px;
 }
+
+
 .navbar-nav{
     display: flex;
     align-items: center;
@@ -100,3 +118,69 @@
 .navbar-nav li a:hover{
     color: var(--colorGreenAccent);
 }
+#navbarNav.collapse.show {
+	transition: 10s;
+}
+
+
+.product{
+	display: flex;
+	margin: 10px 30px;
+}
+.product .product-title{
+	margin: 0 0 50px;
+}
+.product .product-img{
+	margin: 10px 0;
+}
+
+.social-media {
+	position: absolute;
+	top: 50%;
+	right: 0; /* Adjust this value to move the icons away from the right edge */
+	transform: translateY(-50%);
+}
+.social-media .navbar-nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.social-media .navbar-nav .nav-item {
+	margin: 10px; /* Adjust this value to increase/decrease the space between buttons */
+	display: inline-block;
+	transition: .1s;
+}
+
+.social-media .navbar-nav .nav-item:hover{
+	transition: .3s;
+	transform: scale(1.3);
+}
+
+
+/* @media (max-width: 990px) {
+
+    #navbarNav.collapse.show {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgb(255, 255, 255); 
+		transition: .02s;
+    }
+
+
+    #navbarNav ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+		transition: .5s;
+    }
+
+
+    #navbarNav ul li {
+		margin-bottom: 10px;
+    }
+} */
