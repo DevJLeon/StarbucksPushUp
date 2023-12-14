@@ -127,11 +127,31 @@ li {
 	display: flex;
 	margin: 10px 30px;
 }
+
 .product .product-title{
 	margin: 0 0 50px;
+	font-size: 500px;
 }
+
+.product .product-title h3{
+	margin: 0 0 50px;
+	font-size: 50px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
 .product .product-img{
-	margin: 10px 0;
+	margin: 0 30px 30px 30px;
+	display: flex;
+	justify-content: center;
+}
+.product .product-img img{
+	transition: .2s;
+}
+
+.product .product-img img:hover{
+	transform: scale(1.05);
+	transition: .3s;
 }
 
 .social-media {
